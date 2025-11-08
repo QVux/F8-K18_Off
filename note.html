@@ -409,7 +409,7 @@ Buoi 8: 2025-11-04
 
 Co 3 cach CSS
 - Inline css: viet trong attribute style
- - Internal: viet css trong cap the <style></style>
+- Internal: viet css trong cap the <style></style>
 - External: viet vao file.css ben ngoai
 
 selector{
@@ -436,5 +436,34 @@ do bao phu: external > internal > inline
 .parent ul: tat ca cac the con/chau/chat...deu bi anh huong
 .parent > ul: chi the con truc tiep bi anh huong
 
+------------------------------------------------------------
+Buoi 9: 2025-11-08
+------------------------------------------------------------
 
+selector
 
+h1, p{
+    color: red;
+}
+-> h va p co chung css
+
+h1 + p{
+   color: red;
+}
+-> h1 + p: p dung canh h1
+
+h1 ~ p{
+    color: red;
+}
+-> h1 ~ p: p cung cap dung sau h
+
+input[name="name"]{
+    color: red;
+}
+-> nhung css co name la name
+
+de bai:
+    co 1 radio btn red, green, yellow
+    <p>doan van</p>
+    check red -> text do
+    check green -> green text

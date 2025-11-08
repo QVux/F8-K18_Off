@@ -1,0 +1,67 @@
+/*h1, p{*/
+/*    color: red;*/
+/*}*/
+
+/*h1 + p{*/
+/*    color: red;*/
+/*}*/
+
+h1 ~ p{
+    color: red;
+}
+
+input[name="name"]{
+    color: red;
+}
+
+input[name='mode']:checked ~ p{
+    color: red;
+}
+
+/*Cach1:*/
+/*input[id="red"]:checked ~ p{*/
+/*    color: red;*/
+/*}*/
+
+/*input[id="green"]:checked ~ p{*/
+/*    color: green;*/
+/*}*/
+
+/*input[id="yellow"]:checked ~ p{*/
+/*    color: yellow;*/
+/*}*/
+
+/*Cach2*/
+#red:checked ~ p{
+    color: red;
+}
+
+#green:checked ~ p{
+    color: green;
+}
+
+#yellow:checked ~ p{
+    color: yellow;
+}
+
+h1{
+    color: purple;
+}
+
+h1:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

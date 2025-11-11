@@ -368,8 +368,7 @@ form / button / input / label / select - option
 input
 placeholder: goi y xem o day nhap cai j
 value: gia tri se dc dien mac dinh
-name:
-ten cua input
+name: ten cua input
 type:
 text: type mac dinh
 password: hien thi * thay vi raw value (gia tri tho)
@@ -380,7 +379,6 @@ submit: nut bam, khi bam vai day thi verify dc email
 form:
 method: phuong thuc (post/get/put/patch)
 action: hanh dong
-
 
 dieu kien:
 - the form phai co action + method neu ko truyen method -> mac dinh la method GET
@@ -475,4 +473,36 @@ background:
 ----------------------------------------------------------------------------------
 Buoi 10: 2025-11-11
 ----------------------------------------------------------------------------------
-first child, last child,.....
+
+background-size: cover; -> lay full chieu rong khung hinh va bo chieu cao
+
+background-size: contain; -> lay full chieu cao khung hinh va bo chieu rong
+
+text-decoration: none; -> xoa bo dau gach chan
+
+list-style: none; -> xoa bo dau cham cua ul li
+
+list-style-type: circle; -> thay doi dau cham cua ul li
+
+ul li:first-child{
+    background-color: red;
+}
+-> chon phan tu con dau tien de css
+
+ul li:nth-child(2){
+    background-color: red;
+}
+-> css cac phan tu con dc chon
+
+ul li:nth-of-type(4){
+    background-color: red;
+}
+-> css se check vao the con li thu 4
+
+- Background = padding + content
+
+- Cac the luon co cac thanh phan:
+    -Content
+    -Border: boc ngoai content (co tinh chat cong don)
+    -Padding: phan dem nam giua content va border
+    -Margin: nam ngoai boder, la khoang cach giua cac border

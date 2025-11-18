@@ -33,6 +33,13 @@
         ul li:last-of-type{
             background-color: red;
         }
+
+        .info p:last-child{
+            background-color: red;
+        }
+        .nav li:nth-child(3) li:nth-child(2){
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +51,19 @@
         <li><a href="#">Contacts</a></li>
         <li><a href="#">Jobs</a></li>
         <li><a href="#">...</a></li>
+    </ul>
+
+    <ul class="nav">
+        <li>Home</li>
+        <li>
+            Products
+            <ul>
+                <li>Phone</li>
+                <li>Laptop</li>
+                <li>Tablet</li>
+            </ul>
+        </li>
+        <li>Contact</li>
     </ul>
 </body>
 </html>

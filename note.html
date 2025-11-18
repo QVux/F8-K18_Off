@@ -455,7 +455,7 @@ h1 ~ p{
 }
 -> h1 ~ p: p cung cap dung sau h
 
-input[name="name"]{
+input[name="name"]:checked{
     color: red;
 }
 -> nhung css co name la name
@@ -506,3 +506,51 @@ ul li:nth-of-type(4){
     -Border: boc ngoai content (co tinh chat cong don)
     -Padding: phan dem nam giua content va border
     -Margin: nam ngoai boder, la khoang cach giua cac border
+
+--------------------------------------------------------------------------------------------
+Buoi 11: 2025-11-15
+--------------------------------------------------------------------------------------------
+
+text-align: center; -> ap dung cho nhung phan tu ma phan content con du cho de text can giua
+
+box-sizing:
+    content-box: width = content
+    border-box: width = content + padding + border
+        -> tai vi content va padding nam ben trong border
+
+%: an theo the cha truc tiep
+
+the inline ko co width, height
+
+object-fit: fill; -> la mac dinh resize
+object-fit: cover; -> khi width/height cua the img > anh goc thi anh tu scale ngang, chieu cao bi thua an di
+                   -> khi width/height cua the img < anh goc thi anh giu chieu cao, chieu ngang an di
+object-fit: contain; -> luon giu chieu ngang
+
+-----------------------------------------------------------------------------------------------
+Buoi 12: 2025-11-18
+-----------------------------------------------------------------------------------------------
+- Thuoc tinh display: thay doi cach hien thi cua 1 the html
+- Cac gia tri pho bien
+    - none: An phan tu (mat ko gian chua)
+    - block: Dang khoi (giong the block ben html)
+    - inline: Dang dong (giong the inline ben html)
+    - inline-block: ket hop
+
+- Thuoc tinh position: Cac phan tu se sap xep tu tren xuong duoi neu la block, tu trai qua phai neu la inline
+- Position: Can thiep de di chuyen cac phan tu sang cac vi tri khac
+- Cac loai position:
+    - static: ko co position (sap xep mac dinh)
+    - relative: tuong doi
+    - absolute: tuyet doi (se nhan the cha gan nhat co position ko phai la static)
+    - fixed: co dinh (khi keo thanh cuon va chi nhan body lam cha duy nhat)
+
+- Cac thuoc tinh
+    - position: static/ relative/ absolute/ fixed
+    * Khi co 3 thuoc tinh position relative/ absolute/ fixed thi cac thuoc tinh ben duoi moi co tac dung
+    - top
+    - right
+    - bottom
+    - left
+    - z-index: day phan tu dc chon len tren
+    - inset: dai dien cho 4 cai top left right bottom

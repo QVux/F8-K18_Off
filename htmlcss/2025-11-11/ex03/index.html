@@ -12,17 +12,17 @@
             background-color: pink;
             /*border: 20px solid blue; border-color border-style*/
             padding: 20px;
-            margin: 20px;
+            /*margin: 20px;*/
             border-width: 20px 40px 50px 20px;
             border-style: solid;
-            border-color: blue;
+            border-color: blue green red yellow;
         }
 
         .box2{
             background-color: yellow;
             border: 20px solid green; /*border-color border-style*/
             padding: 20px 30px 40px 50px; /*viet theo chieu kim dong ho*/
-            margin: 20px 30px 40px 50px;
+            margin: -1px;
         }
 
         .box3{
@@ -33,6 +33,10 @@
             padding: 0;
             margin: 20px;
             width: 0;
+        }
+
+        .container p:last-child{
+            color: red;
         }
     </style>
 </head>
@@ -48,5 +52,11 @@
     <div class="box3">
         <span></span>
     </div>
+    <div class="container">
+        <p>Đoạn văn 1</p>
+        <span>Span text</span>
+        <p>Đoạn văn 2</p>
+    </div>
+
 </body>
 </html>

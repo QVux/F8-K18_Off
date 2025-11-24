@@ -542,7 +542,7 @@ Buoi 12: 2025-11-18
 - Cac loai position:
     - static: ko co position (sap xep mac dinh)
     - relative: tuong doi
-    - absolute: tuyet doi (se nhan the cha gan nhat co position ko phai la static)
+    - absolute: tuyet doi (se nhan the cha gan nhat co position ko phai la static, lam mat tinh block)
     - fixed: co dinh (khi keo thanh cuon va chi nhan body lam cha duy nhat)
 
 - Cac thuoc tinh
@@ -554,3 +554,7 @@ Buoi 12: 2025-11-18
     - left
     - z-index: day phan tu dc chon len tren
     - inset: dai dien cho 4 cai top left right bottom
+
+- display: none; -> an phan tu khoi bo cuc va ko chiem ko gian, cac phan tu khac se don len de lap cho trong, ko the click hay tuong tac dc
+- visibility: hidden; -> an phan tu nhung van giu vi tri trong layout, khong the click hay tuong tac
+- opacity: 0; -> phan tu van hien dien trong layout nhung don gian la bi lam mo 100%, co the click va tuong tac dc

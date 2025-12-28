@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#box-1{
+    /*flex-shrink: 1;*/
+    flex-grow: 2;
+}
+body{
+    display: flex;
+    border: 10px solid red;
+    justify-content: space-evenly;
+}
+.box{
+    /*background-color: green;*/
+    flex-grow: 1;
+    border: 10px solid green;
+    width: 100px;
+    height: 100px;
+    color: green;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,155 @@
+@media screen and (max-width: 1024px) {
+
+    .contact-container,
+    .return-container,
+    .cancellation-container,
+    .testimonials-header,
+    .testimonials-grid,
+    .faq-header,
+    .faq-grid,
+    .wardrobe-container,
+    .marquee-section,
+    .footer-container {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-container {
+        padding: 20px;
+    }
+
+    .contact-hero,
+    .contact-section-bar,
+    .return-header,
+    .cancellation-header,
+    .testimonials-header,
+    .faq-header {
+        padding: 30px;
+    }
+
+    .contact-card,
+    .return-card,
+    .cancellation-card,
+    .testimonial-card,
+    .faq-item {
+        padding: 30px;
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-card:nth-child(2) {
+        border-right: 2px dashed #262626;
+    }
+
+    .contact-card:nth-child(3) {
+        grid-column: span 1;
+        border-right: none;
+        border-top: none;
+    }
+
+    .return-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .return-card:nth-child(2) {
+        border-right: 2px dashed #262626;
+    }
+
+    .return-card:nth-child(3) {
+        grid-column: span 1;
+        border-right: none;
+        border-top: none;
+    }
+
+    .cancellation-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cancellation-card:nth-child(2) {
+        border-right: 2px dashed #262626;
+    }
+
+    .cancellation-card:nth-child(3) {
+        grid-column: span 1;
+        border-right: none;
+        border-top: none;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-card:nth-child(2n) {
+        border-right: none;
+    }
+
+    .testimonial-card:nth-child(3n) {
+        border-right: 2px dashed #262626;
+    }
+
+    .testimonial-card:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+
+    .testimonial-card:nth-last-child(-n+3) {
+        border-bottom: 2px dashed #262626;
+    }
+
+    .wardrobe-container {
+        padding: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        gap: 30px;
+    }
+
+    .wardrobe-content {
+        max-width: 60%;
+    }
+
+    .wardrobe-title {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .wardrobe-bg-icon {
+        width: 300px;
+    }
+
+    .wardrobe-header-decorative {
+        position: static;
+    }
+
+    .footer-top-row .footer-container,
+    .footer-main-row .footer-container,
+    .footer-bottom-row .footer-container {
+        padding: 30px 0;
+    }
+
+    .footer-main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .footer-newsletter {
+        grid-column: auto;
+        max-width: 100%;
+    }
+
+    .hero-title,
+    .testimonials-title,
+    .faq-title {
+        font-size: 32px;
+    }
+
+    .section-title,
+    .contact-section-title,
+    .return-title,
+    .cancellation-title {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,39 @@
+.marquee-section {
+    padding: 30px 0;
+    overflow: hidden;
+    position: relative;
+    border-top: 2px dashed #262626;
+    border-bottom: 2px dashed #262626;
+    background-color: #0F0F0F;
+    margin-bottom: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.marquee-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    white-space: nowrap;
+}
+
+.marquee-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.marquee-icon {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+}
+
+.marquee-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #333333;
+}

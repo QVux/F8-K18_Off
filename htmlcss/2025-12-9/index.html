@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: #b8faa1;
+        }
+        .menu{
+            display: none;
+        }
+
+        @media screen and (max-width: 1500px){
+            .box{
+                background-color: red;
+            }
+            .menu{
+                display: block;
+            }
+        }@media screen and (max-width: 1000px){
+            .box{
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="menu">icon</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+.testimonials-section {
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    background-color: #0F0F0F;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.testimonials-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px dashed #262626;
+    border-radius: 20px 20px 0 0;
+    padding: 80px;
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials-title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    max-width: 800px;
+}
+
+.testimonials-subtitle {
+    font-size: 15px;
+    color: #81807E;
+    font-weight: 500;
+}
+
+.testimonials-footer {
+    display: none;
+}
+
+.header-decorative {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 1;
+}
+
+.spiral-icon {
+    width: 360px;
+    height: auto;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px dashed #262626;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    padding: 50px 30px 50px 60px;
+    border-right: 2px dashed #262626;
+    border-bottom: 2px dashed #262626;
+}
+
+
+.testimonial-card:nth-child(3n) {
+    border-right: none;
+}
+
+.testimonial-card:nth-last-child(-n+3) {
+    border-bottom: none;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.user-location {
+    font-size: 16px;
+    color: #81807E;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+}
+
+.rating-stars {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.star-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #E6E6E6;
+    font-weight: 500;
+}

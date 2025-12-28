@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    border: 10px solid red;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 500px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 32px;
+}

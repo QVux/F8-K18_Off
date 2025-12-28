@@ -1,0 +1,105 @@
+@media screen and (max-width: 1024px) {
+    /* TABLET RESPONSIVE STYLES */
+
+    .product-detail {
+        padding: 0 20px;
+    }
+
+    .header-container {
+        padding: 20px;
+    }
+
+    .product-header {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .product-title {
+        font-size: 32px;
+    }
+
+    .product-meta .product-desc {
+        font-size: 16px;
+    }
+
+    .product-details {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .details-left .details-heading,
+    .details-section,
+    .details-image,
+    .price-section,
+    .sizes-section,
+    .rating-title,
+    .rating-content {
+        padding: 30px;
+    }
+
+    .details-heading-features {
+        margin: 30px 30px 20px 30px;
+        padding: 0;
+    }
+
+    .features-list {
+        margin: 0 30px 30px 30px;
+        padding-left: 20px;
+    }
+
+    .price-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .price-amount {
+        font-size: 24px;
+    }
+
+    /* Wardrobe */
+    .wardrobe-container {
+        padding: 40px;
+    }
+
+    .wardrobe-title {
+        font-size: 36px;
+    }
+
+    .wardrobe-bg-icon {
+        width: 300px;
+    }
+
+    /* Footer */
+    .footer-top-row,
+    .footer-main-row,
+    .footer-bottom-row {
+        padding: 30px;
+    }
+
+    .footer-top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-links-column,
+    .footer-newsletter {
+        padding: 0;
+        /* Reset padding since we control gap via grid */
+    }
+
+    .footer-main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .footer-newsletter {
+        grid-column: 1 / -1;
+        /* Span full width */
+        max-width: 100%;
+    }
+}

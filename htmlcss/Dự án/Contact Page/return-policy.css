@@ -1,0 +1,119 @@
+.return-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    border: 2px dashed #262626;
+    border-radius: 20px;
+    background-color: #0F0F0F;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+.return-header {
+    padding: 40px 60px;
+    border-bottom: 2px dashed #262626;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.return-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+
+.return-btn {
+    padding: 14px 24px;
+    background-color: #1A1A1A;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.return-btn:hover {
+    background-color: #262626;
+}
+
+.return-btn img {
+    width: 14px;
+    height: 14px;
+}
+
+.return-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.return-card {
+    padding: 40px;
+    border-right: 2px dashed #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.return-card:last-child {
+    border-right: none;
+}
+
+.return-card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.return-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background-color: #1A1A1A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #333;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.return-icon-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 1px dashed #262626;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.return-icon-wrapper img {
+    width: 24px;
+    height: 24px;
+}
+
+.return-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.return-card-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.return-card-desc {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5;
+}

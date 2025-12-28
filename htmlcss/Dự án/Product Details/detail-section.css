@@ -1,0 +1,10 @@
+.product-details {
+    display: flex;
+    gap: 0;
+    border: 2px dashed #262626;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}

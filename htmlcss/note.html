@@ -558,3 +558,79 @@ Buoi 12: 2025-11-18
 - display: none; -> an phan tu khoi bo cuc va ko chiem ko gian, cac phan tu khac se don len de lap cho trong, ko the click hay tuong tac dc
 - visibility: hidden; -> an phan tu nhung van giu vi tri trong layout, khong the click hay tuong tac
 - opacity: 0; -> phan tu van hien dien trong layout nhung don gian la bi lam mo 100%, co the click va tuong tac dc
+--------------------------------------------------------------------------------------------------------------------------------------------
+Buoi 14: 2025-11-25
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+- psudoElement: phan tu gia
+
+.class::after{
+
+}
+--> them vao sau phan tu
+
+.class::before{
+
+}
+--> them vao truoc phan tu
+-----------------------------------------------------------------------------------------------------------------------------------------
+Buoi 15: 2025-11-29
+-----------------------------------------------------------------------------------------------------------------------------------------
+display: flex -> css cho the cha
+    khac inline-block(css cho chinh the do)
+
+main axis, cross axis
+
+flex-direction: column -> truc y la main
+    flex-direction: column-reverse -> dao nguoc tu duoi len tren
+flex-direction: row (mac dinh) -> truc x la main
+    flex-direction: row-reverse -> dao nguoc tu phai qua trai
+
+┌────────────────────────────────┬──────────────────────────────┐
+│                                │                              │
+│  display: flex;                │                              │
+│                                │cross                         │
+│  flex-diretion: row;           │                              │
+│                                │                              │
+│                                │                              │
+├────────────────────────────────┼──────────────────────────────►
+│        main                    │                              │
+│                                │                              │
+│                                │                              │
+│                                │                              │
+│                                │                              │
+│                                │                              │
+│                                │                              │
+└────────────────────────────────▼──────────────────────────────┘
+
+
+┌────────────────────────────────┬──────────────────────────────┐
+│                                │                              │
+│  display: flex;                │                              │
+│                                │ main                         │
+│  flex-direction: column;       │                              │
+│                                │                              │
+│                                │                              │
+├────────────────────────────────┼──────────────────────────────►
+│       cross                    │                              │
+│                                │                              │
+│                                │                              │
+│                                │                              │
+│                                │                              │
+│                                │                              │
+│                                │                              │
+└────────────────────────────────▼──────────────────────────────┘
+
+flex-wrap: wrap;
+    -> xuong dong neu het cho
+align-items
+    -> can theo cross axis
+flex-shrink: 1;
+    viet trong cac the con
+    cho phep phan tu co lai hay ko
+
+flex-grow: 2;
+    viet trong cac the con
+    cho phep phan tu gian ra hay ko
+
+flex-shrink va flex-grow co do uu tien cao hon width

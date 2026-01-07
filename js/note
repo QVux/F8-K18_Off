@@ -1,0 +1,249 @@
+Buoi 1: 2025-12-27
+
+JS: la viet tat cua javascript la 1 ngon ngu lap trinh
+- Muc dich: ra doi de lam FE nhung hien tai co the lam BE, CICD, AI
+- Uu diem: trien khai nhanh, de code
+- Nhuoc diem: + khong tuong minh nen kho bao tri
+              + khi code sai ko the biet ngay
+              + khong ho tro lap trinh huong doi tuong
+TS (typescript): ra doi de giai quyet het nhuoc diem
+    -> co nhung net tuong dong voi Java
+
+- Muon in gia tri nao do ra man hinh terminal(console)
+    -> console.log("")
+
+Bien: (variable) dung de luu 1 gia tri nao do tam thoi
+    + const/let/var <ten bien> = <gia tri>
+        <ten bien>: khong duoc dat trung nhau
+        vua khai bao vua gan gia tri thi goi la khoi tao bien
+
+Phan biet cac tu khoa const/let/var
+    https://www.ohyoufrancyblog.com/static/9557df57adba22264125fcd777fdd539/ead9f/var-let-const.png
+
+Let a = 1 -> khai bao bien a va gan gia tri 1 cho bien a
+
+a = 2 -> cap nhat gia tri 2 cho bien "a"
+
+Data type
+number
+    - int: 1, 2, 3
+    - float: 1.2, 1.3
+bool
+    is/are/have/has + adj/N
+    exp
+        - isNumber = true/false
+-- char
+    -- exp: "a", "b"
+string
+    exp: "ok anh em"
+object
+    - array [matrix]
+        exp:
+            [1, 2, 3]
+            [
+                [1, 2, 3],
+                [3, 2, 1]
+            ]
+    - dictionary (key - value)
+        exp:
+            {
+                "hello": "xin chao",
+                "ok": duoc
+            }
+
+Date object
+Undefined
+Null
+
+Ep kieu du lieu - Convert data type
+
+const a = 1000
+convert
+    1000 -> "1000" -> ok
+    "1000" -> 1000 -> ok
+
+trong toan logic:
+    - chi co true or false
+    - sai: false -> 0
+    - dung: true (khong phai false) -> khong phai 0
+    - sai: false -> ""
+
+
+ number          string         bool          status
+
+  1000 ────────► "1000"                          o
+  1000 ◄──────── "1000"                          o
+                 "true" ◄────── true             o
+                 "true" ──────► true            o x
+   1   ◄─────────────────────── true             ?
+  1000 ────────────────────────►true             o
+
+
+  ┌───────── const numbers = [4, 3, 1, 5, 1]  ◄────
+  │
+  │          const a = 1  ◄───
+  │                   │
+  │                   │
+  │                   │
+  │                   │          ┌───────────────────────────────────────────┐
+  │                   │          │ PC/Mobile                                 │
+  │                   │          │                                           │
+  │                   │          │   ┌──────────────────────────────────┐    │
+  │                   │          │   │ RAM (16GB) -> x o nho            │    │
+  │                   │          │   │                                  │    │
+  │                   │          │   │    ┌────┐                        │    │
+  │                   └──────────┼───┼───►│ 1  │                        │    │
+  │                              │   │    └────┘                        │    │
+  │                              │   │    ┌────┬───┬───┬───┬────┐       │    │
+  └──────────────────────────────┼───┼───►│ 4  │ 3 │ 1 │ 5 │ 1  │       │    │
+                                 │   │    └────┴───┴───┴───┴────┘       │    │
+                                 │   │     ────  1  ──── 3  ────        │    │
+                                 │   │      0  ───── 2  ──── 4          │    │
+                                 │   │                                  │    │
+                                 │   │                                  │    │
+                                 │   │                                  │    │
+                                 │   └──────────────────────────────────┘    │
+                                 │                                           │
+                                 └───────────────────────────────────────────┘
+
+-------------------------------------------------------------------------------
+Buoi 2: 2025-12-30
+numbers = [4, 3, 1, 5, 1]
+
+console.log(numbers.length) -> lay do dai mang (total elements)
+
+numbers[0] = 40
+console.log(numbers) -> thay 40 vao vi tri so 0 cua numbers
+
+const numbers = [4, 3, 1, 5, 1, 1000]
+// vd: vi tri cua numbers la 0x01
+const copiedNumbers = numbers
+// => vi tri cua copiedNumbers cung la 0x01
+copiedNumbers[1] = 2000
+console.log(numbers) -> [4, 2000, 1, 5, 1, 1000]
+
+const a = [1, 2, 3] -> gan cho bien a 1 dia chi vung nho VD: a = 0x01
+let b = a -> b = a = 0x01
+b = 2 -> b = 1 khac a = 0x01
+console.log(a) -> a van giu nguyen
+
+operator: cong tru nhan chia (+, -, *, /)
+
+NaN: Not a Number
+
+string + string
++: -> "1" + "1" = "11"
+- (minus) * (times) / (divide):
+
+    convert to number  ─────────► number
+            │
+            │no
+            │
+            ▼
+      NaN: not a number
+
+bool
+
+and/or (phep hoi/phep tuyen)
+
+// Phep hoi (&&)
+Kết quả đúng (true) khi tất cả các mệnh đề đều đúng
+Chỉ cần một mệnh đề sai → kết quả sai
+Ví dụ:
+true && true → true
+true && false → false
+
+// Phep tuyen (||)
+Kết quả đúng (true) khi ít nhất một mệnh đề đúng
+Chỉ khi tất cả các mệnh đề đều sai → kết quả sai
+Ví dụ:
+true || false → true
+false || false → false
+
+VD:
+a = 3 > 1 (true)
+b = 3 < 1 (false)
+3 > 1 and 2 < 1 (false) Phep hoi
+3 > 1 or 2 < 1 (true) Phep tuyen
+
+const a = true
+-> !a = false
+
+!(3 > 1) and 2 < 1 (false)
+3 < 1 or !(2 < 1) (true)
+
+!a and !b ---- !c
+Dieu kien: c = a and b
+a           b          c
+true        true       true
+true        false      false
+false       true       false
+false       false      false
+!a and !b = !(a and b)
+
+a           b          !a and !b        !(a and b)
+true        true       false            false
+true        false      false            true
+false       true       false            true
+false       false      true             true
+
+============================================================================
+Buoi 3: 2026-01-03
+
+/* JS co 8 kieu du lieu
+* 7 kieu du lieu nguyen thuy
+ - string
+ - number
+ - boolean
+ - undefined
+ - null
+ - bigint
+ - symbol
+* Dac diem cua kieu du lieu nguyen thuy: khong the thay doi gia tri
+* 1 kieu du lieu tham chieu
+ - object
+* Dac diem cua kieu du lieu tham chieu: co the thay doi gia tri
+*/
+
+============================================================================
+Buoi 4: 2026-01-06
+
+function demo () {
+
+}
+
+demo -- func name
+(a, b) -> a, b is parameter
+() -> no param
+{} -> content
+
+demo() -> execute func
+
+function demo() {
+    console.log('12345')
+}
+-> no param, no output
+
+function demo2() {
+    console.log('12345')
+    return 1
+}
+-> no input, output = 1
+
+function demo3(x) {
+    return x
+}
+-> f(x) = x
+--> x is a param
+demo3(100)
+100 -> argument
+
+function plusOne(x) {
+    return x + 1
+}
+f(x) = x + 1
+
+callback is arg, but this arg is func
+
+console.log(a++ + ++a + a -- - --a)
+             10 + 12 + 12 - 10
